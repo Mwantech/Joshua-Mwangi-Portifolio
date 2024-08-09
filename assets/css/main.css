@@ -862,6 +862,12 @@ a.back-to-top:hover, a.back-to-top:focus{
 .projects .project-card:hover .overlay {
     opacity: 1;
 }
+.projects .project-showcase{
+	text-decoration: underline;
+	color: #08d665;
+	font-size: 25px;
+
+}
 
 
 @media (max-width: 768px) {
