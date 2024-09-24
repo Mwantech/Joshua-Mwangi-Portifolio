@@ -461,7 +461,7 @@ a.back-to-top:hover, a.back-to-top:focus{
 	float: right;
 	margin: 14px;
 	cursor: pointer;
-    background-color: #08d665;
+    background-color: #08f773;
 	border-color: #08d665;
 	border-radius: 0;
 }
@@ -750,6 +750,126 @@ a.back-to-top:hover, a.back-to-top:focus{
 05. End Service Area
 ========================================================================== */
 
+.skills {
+	text-align: center;
+	padding: 50px 20px;
+  }
+  
+  .skills h2 {
+	font-size: 36px;
+	margin-bottom: 40px;
+	color: #444;
+  }
+  
+  .skills .skill-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 30px;
+  }
+  
+  .skills .skill {
+	
+	padding: 20px;
+	border-radius: 15px;
+   
+	transition: transform 0.3s ease;
+	position: relative;
+  }
+  
+  .skills .skill:hover {
+	transform: translateY(-10px);
+  }
+  
+  .skills .progress-circle {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto 20px;
+  }
+  
+  .skills .inner-circle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 60px;
+	height: 60px;
+	background-color: white;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+  }
+  
+  .skills .percentage {
+	font-size: 16px;
+	font-weight: bold;
+	color: #333;
+  }
+  
+  .skills .outer-ring {
+	position: relative;
+	transform: rotate(-90deg);
+	z-index: 0;
+  }
+  
+  .skills .outer-ring circle {
+	fill: none;
+	stroke-width: 10;
+	stroke: #e0e0e0;
+  }
+  
+  .skills .outer-ring circle:nth-child(2) {
+	stroke: #4caf50;
+	stroke-linecap: round;
+	stroke-dasharray: 282.74;
+	stroke-dashoffset: 282.74;
+	transition: stroke-dashoffset 1s;
+  }
+  
+  .skills .progress-circle img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 50px;
+	height: 50px;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+  }
+  
+  .skills .skill p {
+	font-size: 18px;
+	margin-top: 15px;
+  }
+  
+  @media (max-width: 768px) {
+	
+	.skills h2 {
+	  font-size: 28px;
+	}
+  
+	.skills.progress-circle {
+	  width: 80px;
+	  height: 80px;
+	}
+  
+	.skills .inner-circle {
+	  width: 50px;
+	  height: 50px;
+	}
+  
+	.skills .skill img {
+	  width: 40px;
+	  height: 40px;
+	}
+  
+	.skills .skill p {
+	  font-size: 16px;
+	}
+  }
+
+  
 
 /* ==========================================================================
 06. Start Portfolio Area
