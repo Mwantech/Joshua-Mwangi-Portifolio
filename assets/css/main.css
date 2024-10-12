@@ -1164,125 +1164,99 @@ a.back-to-top:hover, a.back-to-top:focus{
 ========================================================================== */
 
 
-/*================================================
-Start FunFacts CSS
-=================================================*/
-.funfact {
-	box-shadow: 0 1px 30px rgba(255, 255, 255, 0.2);
+/*hire me section*/
+.hire-me-section {
+	background-color: #ffffff;
+	border-radius: 15px;
+	padding: 30px;
+	width: 90%;
+    max-width: 1200px;
 	text-align: center;
-	border-radius: 5px;
-	border: 1px solid #ccc;
-	background: transparent;
-	padding: 20px 10px;
+	
+	display: flex;
+    align-items: center;
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 0.5s ease, transform 0.5s ease;
 }
-.dark_bg .funfact{
-	border: 1px solid #fff;
-}
-.funfact i{
-	font-size: 85px;
-	color: #e6e2e1;
-	position: absolute;
-	left: 0;
-	right: 0;
-	z-index: -1;
-	opacity: .55;
-	margin: 0 auto;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
-}
-.funfact h3{
-    margin-bottom: -4px;
-    font-size: 45px;
-    font-weight: 600;
-    color: #08d665;
-    font-size: 38px;
-}
-.funfact h3 .odometer{
-	position: relative;
-	top: -4px;
-}
-.funfact p{
-    color: #333333;
-    margin-top: 5px;
-}
-.dark_bg .funfact p{
-	color: #fff;
-}
-/* ==========================================================================
-04. End FunFacts CSS
-========================================================================== */
 
+.hire-me-section.visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+.hire-me-section .profile-image {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 3px solid #08d665;
+	margin-right: 30px;
+}
 
-/* ==========================================================================
-09. Start Blog Area
-========================================================================== */
-@media only screen and (max-width:480px) { 
-.single_blog {margin-bottom:30px;}
-}
-.single_blog{
-	transition: all 0.3s ease;
-	margin-bottom: 30px;
-}
-.blog-thumb{
-	background: transparent;
-	-webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
-	-moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
-	box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
-	border-radius: 3px;
+.hire-me-section .content {
+	flex-grow: 1;
 	text-align: left;
-	margin-bottom: 30px;
 }
-.blog-thumb small {
-	color: #08d665;
-	font-weight: 500;
-	display: block;
+
+.hire-me-section h1 {
+	color: #333;
+	margin-bottom: 10px;
+	font-size: 28px;
 }
-.blog-thumb small .fa {
-	margin-right: 5px;
+
+.hire-me-section p {
+	color: #666;
+	margin-bottom: 20px;
+	font-size: 16px;
 }
-.blog-thumb small,
-.blog-thumb small + span {
-	display: inline-block;
-	vertical-align: middle;
+
+.hire-me-section .hire-me-button {
+	background-color: #08d665;
+	color: white;
+	border: none;
+	padding: 12px 24px;
+	font-size: 16px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.1s ease;
 }
-.blog-thumb small + span{
-	color: #333333;
-	font-size: 10px;
-	font-weight: bold;
-	text-transform: capitalize;
-	margin-left: 2px;
+
+.hire-me-section .hire-me-button:hover {
+	background-color: #08d665;
+	transform: scale(1.05);
 }
-.dark_bg .blog-thumb small + span{
-	color: #fff;
+
+@media (max-width: 768px) {
+	.hire-me-section .hire-me-section {
+		flex-direction: column;
+		text-align: center;
+		padding: 20px;
+	}
+
+	.hire-me-section .profile-image {
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+
+	.hire-me-section .content {
+		text-align: center;
+	}
+
+	.hire-me-section h1 {
+		font-size: 24px;
+	}
+
+	.hire-me-section p {
+		font-size: 14px;
+	}
+
+	.hire-me-section .hire-me-button {
+		font-size: 14px;
+		padding: 10px 20px;
+	}
 }
-.blog-thumb h4{
-	color: #222;
-    padding: 8px 0 12px;
-    font-size: 22px;
-    margin: 0;
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-}
-.dark_bg .blog-thumb h4{
-	color: #fff;
-}
-.single_blog:hover .blog-thumb h4{
-	color: #08d665;
-}
-.blog-info{
-	box-shadow: 0 1px 30px rgba(255, 255, 255, 0.2);
-	padding: 18px 30px;
-}
-.dark_bg .blog-info p{
-	color: #fff;
-}
-.blog-info .blog_btn{
-	margin: 20px 0px 0px 0px;
-}
-/* ==========================================================================
-09. End Blog Area
-========================================================================== */
+/*end of hire me section*/
+
 
 
 /* ==========================================================================
