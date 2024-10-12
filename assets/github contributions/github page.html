@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GitHub Contributions</title>
+    <style>
+        .github-contributions {
+            background-color: #f6f8fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
+        }
+        .github-contributions h2 {
+            color: #24292e;
+            margin-bottom: 15px;
+        }
+        .github-contributions p {
+            color: #586069;
+            margin-bottom: 15px;
+        }
+        .github-embed {
+            width: 100%;
+            height: 200px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <section class="github-contributions">
+        <h2>My GitHub Contributions</h2>
+        <p>Check out my coding activity on GitHub:</p>
+        <img src="https://ghchart.rshah.org/Mwantech" alt="YOUR_NAME GitHub Contributions" class="github-embed">
+        <p>View my full profile on <a href="https://github.com/Mwantech" target="_blank">GitHub</a>.</p>
+    </section>
+</body>
+</html>		
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Showcase</title>
+    <style>
+        /* Basic Reset */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        body {
+          font-family: 'Arial', sans-serif;
+        }
+
+        .project-section {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #f6fdf3;
+          padding: 50px 20px;
+          position: relative;
+          min-height: 100vh;
+        }
+
+        .project-section .project-container {
+          display: flex;
+          max-width: 1200px;
+          width: 100%;
+          align-items: center;
+          justify-content: space-between;
+          opacity: 1;
+          transition: opacity 0.5s ease;
+        }
+
+        .project-section .project-image img {
+          width: 100%;
+          max-width: 300px;
+          transition: transform 0.5s ease;
+        }
+
+        .project-section .project-details {
+          max-width: 600px;
+          padding-left: 40px;
+        }
+
+        .project-section .project-details h2 {
+          font-size: 24px;
+          margin-bottom: 20px;
+          color: #333;
+          transition: transform 0.5s ease;
+        }
+
+        .project-section .project-details p {
+          font-size: 16px;
+          margin-bottom: 20px;
+          color: #666;
+          line-height: 1.6;
+          transition: transform 0.5s ease;
+        }
+
+        .project-section .technologies {
+          margin-bottom: 20px;
+          transition: transform 0.5s ease;
+        }
+
+        .project-section .technologies span {
+          background-color: #e0e4eb;
+          color: #333;
+          padding: 8px 12px;
+          border-radius: 20px;
+          font-size: 14px;
+          margin-right: 10px;
+          margin-bottom: 10px;
+          display: inline-block;
+          transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .project-section .demo-btn {
+          display: inline-block;
+          padding: 12px 20px;
+          background-color: #08d665;
+          color: #fff;
+          border-radius: 25px;
+          text-decoration: none;
+          font-size: 16px;
+          transition: background-color 0.3s ease, transform 0.5s ease;
+        }
+
+        .project-section .demo-btn:hover {
+          background-color: #08d665;
+        }
+
+        /* Slider Controls */
+        .project-section .slider-controls {
+          position: absolute;
+          top: 50%;
+          left: 10px;
+          right: 10px;
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .project-section .slider-controls button {
+          background-color: #f9f5ed;
+          border: none;
+          font-size: 24px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+
+        .project-section .slider-controls button:hover {
+          color: #08d665;
+        }
+
+        /* Fade-out effect */
+       .project-section  .project-container.fade-out {
+          opacity: 0;
+        }
+
+        .project-section .project-container.fade-out .project-image img,
+        .project-container.fade-out .project-details h2,
+        .project-container.fade-out .project-details p,
+        .project-container.fade-out .technologies,
+        .project-container.fade-out .demo-btn {
+          transform: translateY(20px);
+        }
+        /* New styles for project indicators */
+        .project-section .project-indicators {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .project-section .indicator {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #ccc;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .project-section .indicator.active {
+            background-color: #08d665;
+        }
+
+        /* Style for disabled navigation buttons */
+        .project-section .slider-controls button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+          .project-section .project-container {
+            flex-direction: column;
+            text-align: center;
+          }
+
+          .project-section .project-details {
+            padding-left: 0;
+            margin-top: 20px;
+          }
+
+          .project-section .technologies span {
+            margin-right: 5px;
+          }
+        }
+
+        @media screen and (max-width: 480px) {
+          .project-section .project-details h2 {
+            font-size: 20px;
+          }
+
+          .project-section .project-details p {
+            font-size: 14px;
+          }
+
+          .project-section .technologies span {
+            padding: 6px 10px;
+            font-size: 12px;
+          }
+
+          .project-section .demo-btn {
+            font-size: 14px;
+            padding: 10px 18px;
+          }
+
+          .project-section .slider-controls button {
+            font-size: 18px;
+          }
+        }
+    </style>
+</head>
+<body>
+    <div class="project-section">
+        <div class="project-container">
+            <div class="project-image">
+                <img src="/api/placeholder/300/300" alt="Project Image" />
+            </div>
+            <div class="project-details">
+                <h2>Eventora: Event Management Web App</h2>
+                <p>
+                    Eventora is a web application that allows users to create events, share unique event links, 
+                    and manage media uploads. Built with React.js, Firebase, and Node.js, this app provides a 
+                    seamless way to organize events and share media with attendees.
+                     It includes features such as media uploads, event details management, and a user-friendly interface.
+                </p>
+                <div class="technologies">
+                    <span>CSS</span>
+                    <span>Node JS</span>
+                    <span>Firebase</span>
+                    <span>ReactJS</span>
+                    <span>MySQL</span>
+                </div>
+                <a href="#" class="demo-btn">Demo Video →</a>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="prev-btn" onclick="navigateProjects('prev')">←</button>
+            <button class="next-btn" onclick="navigateProjects('next')">→</button>
+        </div>
+        <div class="project-indicators">
+            <!-- Indicators will be dynamically added here -->
+        </div>
+    </div>
+
+    <script>
+        const projects = [
+        {
+    title: "Eventora: Event Management Web App",
+    description: "Eventora is a web application that allows users to create events, share unique event links, and manage media uploads. Built with React.js, Firebase, and Node.js, this app provides a seamless way to organize events and share media with attendees. It includes features such as media uploads, event details management, and a user-friendly interface.",
+    technologies: ["React.js", "CSS", "Firebase", "Node.js", "MySQL"],
+    GitHubRepository: ["https://github.com/Mwantech/event-creator"],
+    image: "assets/img/chatbg.jpg"
+},
+{
+    title: "AI-Powered Symptom Checker",
+    description: "An AI-driven symptom checker that interacts with users to identify potential health issues based on their symptoms. It validates health-related inputs, provides recommendations, and suggests nearby medical centers. The system uses natural language processing and a chatbot interface to deliver accurate responses and ensure user safety.",
+    technologies: ["AI", "NLP", "React", "TensorFlow.js", "Python", "Google Maps API"],
+    GitHubRepository: ["https://github.com/Mwantech/Symptom-checker"],
+    image: "/api/placeholder/300/300"
+},
+{
+    title: "Real-Time Chat Application",
+    description: "A real-time chat application that enables users to send messages instantly using JavaScript, PHP, MySQL, and CSS. The application supports user authentication, live message updates, and an intuitive interface for smooth communication. It offers scalability and efficient database management, ensuring high performance.",
+    technologies: ["JavaScript", "PHP", "MySQL", "CSS", "WebSockets"],
+    GitHubRepository: ["https://github.com/Mwantech/Real-chat-application"],
+    image: "/api/placeholder/300/300"
+}
+
+        ];
+
+        let currentProjectIndex = 0;
+        const projectContainer = document.querySelector('.project-container');
+        const prevButton = document.querySelector('.prev-btn');
+        const nextButton = document.querySelector('.next-btn');
+        const indicatorsContainer = document.querySelector('.project-indicators');
+
+        function createIndicators() {
+            projects.forEach((_, index) => {
+                const indicator = document.createElement('div');
+                indicator.classList.add('indicator');
+                indicator.addEventListener('click', () => navigateToProject(index));
+                indicatorsContainer.appendChild(indicator);
+            });
+            updateIndicators();
+        }
+
+        function updateIndicators() {
+            const indicators = document.querySelectorAll('.indicator');
+            indicators.forEach((indicator, index) => {
+                if (index === currentProjectIndex) {
+                    indicator.classList.add('active');
+                } else {
+                    indicator.classList.remove('active');
+                }
+            });
+        }
+
+        function updateNavigationButtons() {
+            prevButton.disabled = currentProjectIndex === 0;
+            nextButton.disabled = currentProjectIndex === projects.length - 1;
+        }
+
+        function updateProjectDisplay() {
+            const project = projects[currentProjectIndex];
+            document.querySelector('.project-image img').src = project.image;
+            document.querySelector('.project-details h2').textContent = project.title;
+            document.querySelector('.project-details p').textContent = project.description;
+            
+            const techContainer = document.querySelector('.technologies');
+            techContainer.innerHTML = '';
+            project.technologies.forEach(tech => {
+                const span = document.createElement('span');
+                span.textContent = tech;
+                techContainer.appendChild(span);
+            });
+
+            updateIndicators();
+            updateNavigationButtons();
+        }
+
+        function navigateToProject(index) {
+            if (index < 0 || index >= projects.length || index === currentProjectIndex) return;
+
+            projectContainer.classList.add('fade-out');
+            
+            setTimeout(() => {
+                currentProjectIndex = index;
+                updateProjectDisplay();
+                
+                setTimeout(() => {
+                    projectContainer.classList.remove('fade-out');
+                }, 50);
+            }, 500);
+        }
+
+        function navigateProjects(direction) {
+            let newIndex;
+            if (direction === 'next' && currentProjectIndex < projects.length - 1) {
+                newIndex = currentProjectIndex + 1;
+            } else if (direction === 'prev' && currentProjectIndex > 0) {
+                newIndex = currentProjectIndex - 1;
+            } else {
+                return; // Don't navigate if we're at the start or end
+            }
+            navigateToProject(newIndex);
+        }
+
+        // Initialize the display
+        createIndicators();
+        updateProjectDisplay();
+    </script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Skills</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <style>
+        .skills-section {
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .skills-section .skills-category {
+            margin-bottom: 20px;
+        }
+        .skills-section .skills-category h3 {
+            border-bottom: 2px solid #08d665;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            color: #08d665;
+        }
+        .skills-section .skill-items {
+            display: flex;
+            flex-direction: column;
+        }
+        .skills-section .skill-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            background-color: white;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .skills-section .skill-icon {
+            font-size: 24px;
+            margin-right: 10px;
+            width: 30px;
+            text-align: center;
+            color: #08d665;
+        }
+        .skills-section .skill-details {
+            flex-grow: 1;
+        }
+        .skills-section .skill-name {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .skills-section .skill-level {
+            font-style: italic;
+            color: #666;
+        }
+        .skills-section .skill-stats {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .skills-section .certifications {
+            margin-top: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .skills-section .skill-items {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .skills-section .skill-item {
+                flex-basis: calc(50% - 10px);
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .skills-section .skill-item {
+                flex-basis: calc(33.333% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="skills-section">
+        <h2>Technical Skills</h2>
+        
+        <div class="skills-category">
+            <h3>Frontend</h3>
+            <div class="skill-items">
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                    <div class="skill-details">
+                        <span class="skill-name">HTML</span>
+                        <span class="skill-level">Advanced</span>
+                        <div class="skill-stats">10 projects, 3 years of experience</div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                    <div class="skill-details">
+                        <span class="skill-name">CSS</span>
+                        <span class="skill-level">Advanced</span>
+                        <div class="skill-stats">20 projects, 3 years of experience</div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-js"></i></div>
+                    <div class="skill-details">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-level">Intermediate</span>
+                        <div class="skill-stats">5 projects, 3 years of experience</div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-react"></i></div>
+                    <div class="skill-details">
+                        <span class="skill-name">React</span>
+                        <span class="skill-level">Intermediate</span>
+                        <div class="skill-stats">5 projects, 1 years of experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="skills-category">
+            <h3>Backend</h3>
+            <div class="skill-items">
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-php"></i></div>
+                    <div class="skill-details">
+                        <span class="skill-name">PHP</span>
+                        <span class="skill-level">Intermediate</span>
+                        <div class="skill-stats">9 projects, 2 years of experience</div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                    <div class="skill-details">
+                        <span class="skill-name">Node.js</span>
+                        <span class="skill-level">Intermediate</span>
+                        <div class="skill-stats">5 projects, 1 years of experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="skills-category">
+            <h3>Database</h3>
+            <div class="skill-items">
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <div class="skill-details">
+                        <span class="skill-name">MySQL</span>
+                        <span class="skill-level">Intermediate</span>
+                        <div class="skill-stats">9 projects, 2 years of experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="skills-category">
+            <h3>Cloud Storage</h3>
+            <div class="skill-items">
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-fire"></i></div>
+                    <div class="skill-details">
+                        <span class="skill-name">Firebase</span>
+                        <span class="skill-level">Beginner</span>
+                        <div class="skill-stats">2 projects, 1 years of experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="certifications">
+            <h3>Certifications</h3>
+            <ul>
+                <li>IBM SkillsUp 2024 Cybersecurity Fundamentals</li>
+                <!-- Add more certifications as needed -->
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

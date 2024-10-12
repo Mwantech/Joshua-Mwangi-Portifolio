@@ -8,6 +8,8 @@
 		<title>Joshua Personal Portfolio</title>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Poppins:300i,400,400i,500,600,700,800" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+		
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >	
 		
@@ -59,6 +61,8 @@
 		window.dataLayer = window.dataLayer || []; function gtag() {dataLayer.push(arguments);} gtag('js', new Date());
 		gtag('config', 'G- 9E591CRVZ3');
 		</script>
+		<!--link for skills-->
+		
 	</head>
   
 	<body data-spy="scroll" data-offset="80">
@@ -88,7 +92,7 @@
 						  <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
 						  <li class="nav-item"><a class="nav-link" href="#skills">My Skills</a></li>				
 						  <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>				  			
-						  <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>			
+						  <li class="nav-item"><a class="nav-link" href="#Growth">Growth</a></li>			
 						  <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
 						</ul>
 				    </div>
@@ -135,7 +139,27 @@
 					<img src="assets/img/Bonny-1559-removebg.png" alt="Profile Image">
 				</div>
 				<div class="about-content">
-					<p>Hello! I'm Mwangi Joshua a software developer with two years of experience, I specialize in designing and developing web applications, creating robust software solutions, and integrating AI technologies. My expertise extends to training AI models and ensuring cybersecurity measures are in place to protect applications. I bring a strong foundation in modern development practices, a keen understanding of secure coding principles, and a commitment to delivering high-quality, innovative software solutions.</p>
+					<p class="bio">Hello! I'm Mwangi Joshua a software developer with two years of experience, 
+						I specialize in designing and developing web applications, creating robust software
+						 solutions, and integrating AI technologies. My expertise extends to training AI models 
+						 and ensuring cybersecurity measures are in place to protect applications. I bring a strong
+						  foundation in modern development practices, a keen understanding of secure coding principles, 
+						  and a commitment to delivering high-quality, innovative software solutions.</p>
+
+						  <div class="soft-skills-section">
+							<h3 class="soft-skills-header">Soft Skills:</h3>
+							<ul>
+								<li>Strong problem-solving and analytical thinking</li>
+								<li>Excellent communication and teamwork</li>
+								<li>Adaptability and quick learning in fast-changing tech landscape</li>
+								<li>Creative approach to software design and user experience</li>
+							</ul>
+						</div>
+
+						<p class="closing-statement">
+							I bring a strong foundation in modern development practices, a keen understanding of secure coding principles, and an unwavering commitment to delivering high-quality, innovative software solutions that make a real difference.
+						</p>
+
 					<div class="admin-sign">
 						<a href="assets/resume/Joshua Mwangi.pdf" class="btn"><i class="fa fa-download"></i>Download CV</a>
 						<a href="mailto: mwantech005@gmail.com" class="btn"><i class="fa fa-envelope"></i>Contact Me</a>
@@ -234,328 +258,139 @@
 		<!-- Services Section End -->
 
 			<!--My skills section-->
-			<section id="skills" class="skills">
-				<h2>My Skills</h2>
-				<div class="skill-container">
-				  <!-- Skill 1 -->
-				  <div class="skill">
-					<div class="progress-circle">
-					  <svg class="outer-ring" width="100" height="100">
-						<circle cx="50" cy="50" r="45"></circle>
-						<circle cx="50" cy="50" r="45" style="stroke-dasharray: 282.74; stroke-dashoffset: 28.27;"></circle>
-					  </svg>
-					  <img src="https://img.icons8.com/color/96/000000/html-5--v1.png" alt="HTML5 Icon" />
-					  <div class="inner-circle">
-						<span class="percentage">90%</span>
-					  </div>
+			<section class="skills-section" id="skills">
+				<h2>Technical Skills</h2>
+				
+				<div class="skills-grid">
+					<div class="skill-card">
+						<h3>Frontend</h3>
+						<ul class="skill-list">
+							<li><i class="fab fa-html5 skill-icon"></i> HTML (Advanced)</li>
+							<li><i class="fab fa-css3-alt skill-icon"></i> CSS (Advanced)</li>
+							<li><i class="fab fa-js skill-icon"></i> JavaScript (Intermediate)</li>
+							<li><i class="fab fa-react skill-icon"></i> React (Intermediate)</li>
+
+						</ul>
 					</div>
-					<p>HTML5</p>
-				  </div>
-				  <!-- Skill 2 -->
-				  <div class="skill">
-					<div class="progress-circle">
-					  <svg class="outer-ring" width="100" height="100">
-						<circle cx="50" cy="50" r="45"></circle>
-						<circle cx="50" cy="50" r="45" style="stroke-dasharray: 282.74; stroke-dashoffset: 56.55;"></circle>
-					  </svg>
-					  <img src="https://img.icons8.com/color/96/000000/css3.png" alt="CSS3 Icon" />
-					  <div class="inner-circle">
-						<span class="percentage">80%</span>
-					  </div>
+					
+					<div class="skill-card">
+						<h3>Backend</h3>
+						<ul class="skill-list">
+							<li><i class="fab fa-php skill-icon"></i>PHP (Intermediate)</li>
+							<li><i class="fab fa-node-js skill-icon"></i>Node.js (Intermediate)</li>
+						</ul>
 					</div>
-					<p>CSS3</p>
-				  </div>
-				  <!-- Skill 3 -->
-				  <div class="skill">
-					<div class="progress-circle">
-					  <svg class="outer-ring" width="100" height="100">
-						<circle cx="50" cy="50" r="45"></circle>
-						<circle cx="50" cy="50" r="45" style="stroke-dasharray: 282.74; stroke-dashoffset: 70.68;"></circle>
-					  </svg>
-					  <img src="https://img.icons8.com/color/96/000000/javascript.png" alt="JavaScript Icon" />
-					  <div class="inner-circle">
-						<span class="percentage">75%</span>
-					  </div>
+					
+					<div class="skill-card">
+						<h3>Database</h3>
+						<ul class="skill-list">
+							<li><i class="fas fa-database skill-icon"></i>MySQL (Intermediate)</li>
+						</ul>
 					</div>
-					<p>JavaScript</p>
-				  </div>
-				  <!-- Skill 4 -->
-				  <div class="skill">
-					<div class="progress-circle">
-					  <svg class="outer-ring" width="100" height="100">
-						<circle cx="50" cy="50" r="45"></circle>
-						<circle cx="50" cy="50" r="45" style="stroke-dasharray: 282.74; stroke-dashoffset: 84.82;"></circle>
-					  </svg>
-					  <img src="https://img.icons8.com/color/96/000000/python.png" alt="Python Icon" />
-					  <div class="inner-circle">
-						<span class="percentage">70%</span>
-					  </div>
+					
+					<div class="skill-card">
+						<h3>Cloud Storage</h3>
+						<ul class="skill-list">
+							<li><i class="fas fa-fire skill-icon"></i>Firebase (Beginner)</li>
+						</ul>
 					</div>
-					<p>Python</p>
-				  </div>
-				  <!-- Skill 5 -->
-				  <div class="skill">
-					<div class="progress-circle">
-					  <svg class="outer-ring" width="100" height="100">
-						<circle cx="50" cy="50" r="45"></circle>
-						<circle cx="50" cy="50" r="45" style="stroke-dasharray: 282.74; stroke-dashoffset: 84.82;"></circle>
-					  </svg>
-					  <img src="https://img.icons8.com/officel/80/php-logo.png" alt="PHP Icon" />
-					  <div class="inner-circle">
-						<span class="percentage">70%</span>
-					  </div>
-					</div>
-					<p>PHP</p>
-				  </div>
-				  <!-- Skill 6 -->
-				  <div class="skill">
-					<div class="progress-circle">
-					  <svg class="outer-ring" width="100" height="100">
-						<circle cx="50" cy="50" r="45"></circle>
-						<circle cx="50" cy="50" r="45" style="stroke-dasharray: 282.74; stroke-dashoffset: 70.68;"></circle>
-					  </svg>
-					  <img src="https://img.icons8.com/color/96/react-native.png" alt="React.js Icon" />
-					  <div class="inner-circle">
-						<span class="percentage">75%</span>
-					  </div>
-					</div>
-					<p>React.js</p>
-				  </div>
-				  <!-- Skill 7 -->
-				  <div class="skill">
-					<div class="progress-circle">
-					  <svg class="outer-ring" width="100" height="100">
-						<circle cx="50" cy="50" r="45"></circle>
-						<circle cx="50" cy="50" r="45" style="stroke-dasharray: 282.74; stroke-dashoffset: 70.68;"></circle>
-					  </svg>
-					  <img src="https://img.icons8.com/color/96/nodejs.png" alt="Node.js Icon" />
-					  <div class="inner-circle">
-						<span class="percentage">75%</span>
-					  </div>
-					</div>
-					<p>Node.js</p>
-				  </div>
-				  <!-- Skill 8 -->
-				  <div class="skill">
-					<div class="progress-circle">
-					  <svg class="outer-ring" width="100" height="100">
-						<circle cx="50" cy="50" r="45"></circle>
-						<circle cx="50" cy="50" r="45" style="stroke-dasharray: 282.74; stroke-dashoffset: 70.68;"></circle>
-					  </svg>
-					  <img src="https://img.icons8.com/fluency/96/cyber-security.png" alt="Cybersecurity Icon" />
-					  <div class="inner-circle">
-						<span class="percentage">75%</span>
-					  </div>
-					</div>
-					<p>Cybersecurity</p>
-				  </div>
 				</div>
-			  </section>
+				
+				<div class="certifications">
+					<h3>Certifications</h3>
+					<ul>
+						<li>IBM SkillsUp 2024 Cybersecurity Fundamentals</li>
+						<!-- Add more certifications as needed -->
+					</ul>
+				</div>
+			</section>
 			<!--My skills end-->
 
 
 	<!--Portifolio-->
 	<section id="portfolio" class="gray_bg portfolio section-padding">
 		<h2 class="section-title wow flipInX" data-wow-delay="0.4s">My <span>Portfolio</span></h2>
-		  <div class="projects" >
-			<h2>My Projects</h2>
-			<div class="project-grid">
-				<div class="project-card">
-					<img src="assets/img/chatbg.jpg" alt="Project 1">
-					<div class="overlay">
-						<div class="overlay-content">
-							<h3>Real Time Chatapplication</h3>
-							<a href="https://github.com/Mwantech/Real-chat-application
-							" class="project-link" target="_blank">
-								<i class="fa fa-link"></i>
-							</a>
-						</div>
+
+
+		<div class="project-section">
+			<h1>Most Recent Work</h1>
+			<div class="project-container">
+				<div class="project-image">
+					<img src="/api/placeholder/300/300" alt="Project Image" />
+				</div>
+				<div class="project-details">
+					<h2>Eventora: Event Management Web App</h2>
+					<p>
+						Eventora is a web application that allows users to create events, share unique event links, 
+						and manage media uploads. Built with React.js, Firebase, and Node.js, this app provides a 
+						seamless way to organize events and share media with attendees.
+						 It includes features such as media uploads, event details management, and a user-friendly interface.
+					</p>
+					<div class="technologies">
+						<span>CSS</span>
+						<span>Node JS</span>
+						<span>Firebase</span>
+						<span>ReactJS</span>
+						<span>MySQL</span>
+					</div>
+					<div class="project-links">
+						<a href="#" class="demo-btn">Demo Video →</a>
+						<a href="#" class="github-btn">GitHub Repo →</a>
 					</div>
 				</div>
-				<div class="project-card">
-					<img src="assets/img/eventora.jfif" alt="Project 2">
-					<div class="overlay">
-						<div class="overlay-content">
-							<h3>Eventora</h3>
-							<p>Event management web app where users can share media</p>
-							<a href="https://joshuas-eventora.netlify.app/" class="project-link" target="_blank">
-								<i class="fa fa-link"></i>
-							</a>
-						</div>
+			</div>
+			<div class="slider-controls">
+				<button class="prev-btn" onclick="navigateProjects('prev')">←</button>
+				<button class="next-btn" onclick="navigateProjects('next')">→</button>
+			</div>
+			<div class="project-indicators">
+				<!-- Indicators will be dynamically added here -->
+			</div>
+		</div>
+
+
+
+		<div class="Career-container" id="Growth">
+			<h1>Career Path</h1>
+			<div class="timeline">
+
+				<div class="entry">
+					<div class="entry-content">
+						<h3 class="entry-title">Bachelor of Science in Information Technology</h3>
+						<p class="entry-date">2022 - Current</p>
+						<p>Pursuing a Bachelor's degree in Information Technology at Mount Kenya University Thika</p>
 					</div>
 				</div>
-				<div class="project-card">
-					<img src="assets/img/symptom checker.jpeg" alt="Project 2">
-					<div class="overlay">
-						<div class="overlay-content">
-							<h3>AI symptom checker Chatbot</h3>
-							<a href="https://mysymptom-checker.netlify.app/" class="project-link" target="_blank">
-								<i class="fa fa-link"></i>
-							</a>
-						</div>
+				
+				<div class="entry">
+					<div class="entry-content">
+						<h3 class="entry-title">PLP Smart City 2024 Hackathon</h3>
+						<p class="entry-date">May 2024</p>
+						<p>Participated in the PLP Smart City Hackathon at Zetech University</p>
 					</div>
 				</div>
-				<!-- Add more project cards as needed -->
-				 <a href="assets/projects.html" class="project-showcase">View all Projects</a>
+
+				<div class="entry">
+					<div class="entry-content">
+						<h3 class="entry-title">NRF Hackathon 2024</h3>
+						<p class="entry-date">June 2024</p>
+						<p>Participated in the NRF Hackathon 2024 at Safari Park Hotel</p>
+					</div>
+				</div>
+				
+				<div class="entry">
+					<div class="entry-content">
+						<h3 class="entry-title">IBM Cybersecurity Course</h3>
+						<p class="entry-date">July 2024</p>
+						<p>Completed a one-month short course in Cybersecurity Fundamentals by IBM</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
 
 	<!--end of porfolio section-->
 	
-	
-
-<!-- START BLOG -->
-<div id="blog" class="gray_bg blog-area section-padding">
-	<h2 class="section-title wow flipInX" data-wow-delay="0.4s">My <span>Blog</span></h2>
-	<div class="container">							
-		<div class="row">
-			<div class="col-lg-4 col-md-4 col-xs-12">
-				<div class="single_blog wow fadeInLeft">
-					<div class="blog-thumb">
-						<div class="blog-image">
-						   <a href="#"><img src="assets/img/b1.jpg" class="img-responsive" alt=""/></a>
-						</div>
-						<div class="blog-info">
-							<a href="#"><h4>Latest Trend in Business</h4></a>
-							<small><i class="fa fa-clock-o"></i>July 31, 2024</small>
-							<span>| Design</span>											
-							<p>"Crafting immersive digital experiences that amplify your brand's essence and resonate with your audience."</p>
-							<a href="#" class="btn blog_btn btn-secondary">Read More</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-4 col-xs-12">
-				<div class="single_blog wow fadeInUp">
-					<div class="blog-thumb">
-						<div class="blog-image">
-						   <a href="#"><img src="assets/img/b2.png" class="img-responsive" alt=""/></a>
-						</div>
-						<div class="blog-info">
-							<a href="#"><h4>"Next-Gen Web Design"</h4></a>
-							<small><i class="fa fa-clock-o"></i>July 31, 2024</small>
-							<span>| Design</span>											
-							<p>"Engineering robust digital solutions tailored to your specific needs, ensuring scalability and efficiency."</p>
-							<a href="#" class="btn blog_btn btn-secondary">Read More</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-4 col-xs-12">
-				<div class="single_blog wow fadeInRight">
-					<div class="blog-thumb">
-						<div class="blog-image">
-						   <a href="#"><img src="assets/img/b3.png" class="img-responsive" alt=""/></a>
-						</div>
-						<div class="blog-info">
-							<a href="#"><h4>"Sleek Digital Experiences"</h4></a>
-							<small><i class="fa fa-clock-o"></i>July 31, 2024</small>
-							<span>| Design</span>											
-							<p>"Transforming concepts into captivating visual stories that ignite curiosity and spark connections."</p>
-							<a href="#" class="btn blog_btn btn-secondary">Read More</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div><!--- END CONTAINER -->	
-	<div class="container">							
-		<div class="row">
-			<div class="col-lg-4 col-md-4 col-xs-12">
-				<div class="single_blog wow fadeInLeft">
-					<div class="blog-thumb">
-						<div class="blog-image">
-						   <a href="#"><img src="assets/img/b4.png" class="img-responsive" alt=""/></a>
-						</div>
-						<div class="blog-info">
-							<a href="#"><h4>"Responsive & Stylish Sites"</h4></a>
-							<small><i class="fa fa-clock-o"></i>July 31, 2024</small>
-							<span>| Design</span>											
-							<p>"Crafting flexible and intuitive interfaces that seamlessly adapt to any screen size or device."</p>
-							<a href="#" class="btn blog_btn btn-secondary">Read More</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-4 col-xs-12">
-				<div class="single_blog wow fadeInUp">
-					<div class="blog-thumb">
-						<div class="blog-image">
-						   <a href="#"><img src="assets/img/b5.png" class="img-responsive" alt=""/></a>
-						</div>
-						<div class="blog-info">
-							<a href="#"><h4>"User-Centric Design Approach"</h4></a>
-							<small><i class="fa fa-clock-o"></i>July 31, 2024</small>
-							<span>| Design</span>											
-							<p>"Devising strategic digital campaigns to amplify your online presence and drive meaningful engagement."</p>
-							<a href="#" class="btn blog_btn btn-secondary">Read More</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-4 col-xs-12">
-				<div class="single_blog wow fadeInRight">
-					<div class="blog-thumb">
-						<div class="blog-image">
-						   <a href="#"><img src="assets/img/b6.jpg" class="img-responsive" alt=""/></a>
-						</div>
-						<div class="blog-info">
-							<a href="#"><h4>"Innovative Web Aesthetics"</h4></a>
-							<small><i class="fa fa-clock-o"></i>July 31, 2024</small>
-							<span>| Design</span>											
-							<p>"Offering dedicated assistance and proactive maintenance to safeguard your digital assets and ensure smooth operations."</p>
-							<a href="#" class="btn blog_btn btn-secondary">Read More</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div><!--- END CONTAINER -->	
-</div>
-<!-- END BLOG -->
-
-		<!-- Funfacts Section Start -->
-			<section class="gray_bg funfacts-area pb_80 ">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-3 col-md-3">
-							<div class="funfact">
-								<i class="icofont-printer"></i>
-								<h3><span class="counterUp">120</span>+</h3>
-								<p>Successul Projects</p>
-							</div>
-						</div>
-
-						<div class="col-lg-3 col-md-3">
-							<div class="funfact">
-								<i class="icofont-users"></i>
-								<h3><span class="counterUp">50</span>+</h3>
-								<p>Happy Clients</p>
-							</div>
-						</div>
-
-						<div class="col-lg-3 col-md-3">
-							<div class="funfact">
-								<i class="icofont-users-alt-5"></i>
-								<h3><span class="counterUp">20</span>+</h3>
-								<p>Team Members</p>
-							</div>
-						</div>
-
-						<div class="col-lg-3 col-md-3">
-							<div class="funfact">
-								<i class="icofont-award"></i>
-								<h3><span class="counterUp">2</span>+</h3>
-								<p>Winning Awards</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-        <!-- Funfacts Section End -->
-		
-		
 		
 		<!-- Contact Section Start -->
 			<section id="contact" class="gray_bg section-padding">      
@@ -655,6 +490,7 @@
 			<i class="fa fa-arrow-up"></i>
 		</a>
 
+		<script src="assets/js/project.js"></script>
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script src="assets/js/jquery-min.js"></script>
 		<script src="assets/js/popper.min.js"></script>

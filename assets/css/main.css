@@ -627,10 +627,25 @@ a.back-to-top:hover, a.back-to-top:focus{
 	flex: 1;
 	padding: 20px;
 }
+.about-content .bio {
+	font-size: 1.1rem;
+	margin-bottom: 2rem;
+}
+.about-content .soft-skills-header {
+	color: #08d665;
+	margin-top: 1.5rem;
+}
 .about-content p {
 	font-size: 1.2em;
 	line-height: 1.6;
 	margin-bottom: 20px;
+}
+.about-content ul {
+	padding-left: 1.5rem;
+}
+.about-content .closing-statement {
+	font-style: italic;
+	margin: 1.5rem 0;
 }
 .admin-sign a {
 	text-decoration: none;
@@ -750,268 +765,400 @@ a.back-to-top:hover, a.back-to-top:focus{
 05. End Service Area
 ========================================================================== */
 
-.skills {
-	text-align: center;
-	padding: 50px 20px;
-  }
-  
-  .skills h2 {
-	font-size: 36px;
-	margin-bottom: 40px;
-	color: #444;
-  }
-  
-  .skills .skill-container {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	gap: 30px;
-  }
-  
-  .skills .skill {
-	
-	padding: 20px;
-	border-radius: 15px;
-   
-	transition: transform 0.3s ease;
-	position: relative;
-  }
-  
-  .skills .skill:hover {
-	transform: translateY(-10px);
-  }
-  
-  .skills .progress-circle {
-	position: relative;
-	width: 100px;
-	height: 100px;
-	margin: 0 auto 20px;
-  }
-  
-  .skills .inner-circle {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 60px;
-	height: 60px;
-	background-color: white;
-	border-radius: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	z-index: 1;
-  }
-  
-  .skills .percentage {
-	font-size: 16px;
-	font-weight: bold;
-	color: #333;
-  }
-  
-  .skills .outer-ring {
-	position: relative;
-	transform: rotate(-90deg);
-	z-index: 0;
-  }
-  
-  .skills .outer-ring circle {
-	fill: none;
-	stroke-width: 10;
-	stroke: #e0e0e0;
-  }
-  
-  .skills .outer-ring circle:nth-child(2) {
-	stroke: #08d665;
-	stroke-linecap: round;
-	stroke-dasharray: 282.74;
-	stroke-dashoffset: 282.74;
-	transition: stroke-dashoffset 1s;
-  }
-  
-  .skills .progress-circle img {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 50px;
-	height: 50px;
-	transform: translate(-50%, -50%);
-	z-index: 2;
-  }
-  
-  .skills .skill p {
-	font-size: 18px;
-	margin-top: 15px;
-  }
-  
-  @media (max-width: 768px) {
-	
-	.skills h2 {
-	  font-size: 28px;
-	}
-  
-	.skills.progress-circle {
-	  width: 80px;
-	  height: 80px;
-	}
-  
-	.skills .inner-circle {
-	  width: 50px;
-	  height: 50px;
-	}
-  
-	.skills .skill img {
-	  width: 40px;
-	  height: 40px;
-	}
-  
-	.skills .skill p {
-	  font-size: 16px;
-	}
-  }
+
 
   
 
 /* ==========================================================================
 06. Start Portfolio Area
 ========================================================================== */
-.my-skills{
+.skills-section {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.skills-section h2{
+	text-align: center;
+}
+.skills-section .skills-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
+	margin-bottom: 30px;
+}
+.skills-section .skill-card {
+	background-color: white;
+	border-radius: 8px;
+	padding: 20px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.skills-section .skill-card h3 {
+	margin-top: 0;
+	color: #08d665;
+	border-bottom: 2px solid #08d665;
+	padding-bottom: 10px;
+}
+.skills-section .skill-list {
+	list-style-type: none;
+	padding: 0;
+}
+.skills-section .skill-list li {
+	margin-bottom: 10px;
+}
+.skills-section .skill-icon {
+	margin-right: 10px;
+	color: #08d665;
+}
+.skills-section .certifications {
+	background-color: white;
+	border-radius: 8px;
+	padding: 20px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.skills-section .certifications h3 {
+	color: #08d665;
+	border-bottom: 2px solid #08d665;
+	padding-bottom: 10px;
+}
+
+
+/*project section*/
+.project-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #f6fdf3;
+	padding: 50px 20px;
+	position: relative;
+	min-height: 100vh;
+  }
+
+  .project-section h1 {
+	font-size: 16px;
+	color: #333;
+	margin-bottom: 30px;
 	text-align: center;
   }
-  .my-skills .skills {
-	  display: flex;
-	  flex-wrap: wrap;
-	  justify-content: space-between;
-	  margin: 20px auto;
-	  width: 80%;
+
+  .project-section .project-container {
+	display: flex;
+	max-width: 1200px;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	opacity: 1;
+	transition: opacity 0.5s ease;
   }
 
-  .my-skills .skill {
-	  text-align: center;
-	  margin: 10px;
-	  padding: 10px;
-	  
-	  width: 45%;
+  .project-section .project-image img {
+	width: 100%;
+	max-width: 300px;
+	transition: transform 0.5s ease;
   }
 
-  .my-skills .skill h3 {
-	  margin-bottom: 5px;
+  .project-section .project-details {
+	max-width: 600px;
+	padding-left: 40px;
   }
 
-  .my-skills .skill-bar {
-	  height: 10px;
-	  background-color: #ddd;
-	  margin-bottom: 5px;
-	  border-radius: 10px;
+  .project-section .project-details h2 {
+	font-size: 24px;
+	margin-bottom: 20px;
+	color: #333;
+	transition: transform 0.5s ease;
   }
 
-  .my-skills .skill-bar-filled {
-	  height: 10px;
-	  border-radius: 10px;
-	  background-color: #08d665;
+  .project-section .project-details p {
+	font-size: 16px;
+	margin-bottom: 20px;
+	color: #666;
+	line-height: 1.6;
+	transition: transform 0.5s ease;
   }
-  .projects h2 {
-    text-align: center;
-    margin: 20px 0;
-}
 
-.projects {
-    padding: 20px;
-}
+  .project-section .technologies {
+	margin-bottom: 20px;
+	transition: transform 0.5s ease;
+  }
 
-.projects .project-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
+  .project-section .technologies span {
+	background-color: #e0e4eb;
+	color: #333;
+	padding: 8px 12px;
+	border-radius: 20px;
+	font-size: 14px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	display: inline-block;
+	transition: opacity 0.5s ease, transform 0.5s ease;
+  }
 
-.projects .project-card {
-    position: relative;
-    width: calc(33% - 40px);
-    margin: 10px;
-}
+  .project-section .project-links {
+	display: flex;
+	gap: 10px;
+	margin-top: 20px;
+  }
 
-.projects .project-card img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
+  .project-section .demo-btn,
+  .project-section .github-btn {
+	display: inline-block;
+	padding: 12px 20px;
+	background-color: #08d665;
+	color: #fff;
+	border-radius: 25px;
+	text-decoration: none;
+	font-size: 16px;
+	transition: background-color 0.3s ease, transform 0.5s ease;
+  }
 
-.projects .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(81, 248, 81, 0.7);
-    color: #fff;
-    opacity: 0;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+  .project-section .github-btn {
+	background-color: #333;
+  }
 
-.projects .overlay-content {
-    text-align: center;
-}
+  .project-section .demo-btn:hover,
+  .project-section .github-btn:hover {
+	opacity: 0.9;
+  }
 
-.projects .overlay h3 {
-    margin: 0;
-    font-size: 1.5em;
-}
+  /* Slider Controls */
+  .project-section .slider-controls {
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	right: 10px;
+	display: flex;
+	justify-content: space-between;
+  }
 
-.projects .overlay a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 5px 10px;
-    color: #000;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
+  .project-section .slider-controls button {
+	background-color: #08f773;
+	border: none;
+	font-size: 24px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+  }
 
-.projects .overlay a i {
-    font-size: 2em;
-}
-
-.projects .overlay a:hover {
-    background-color: #ddd;
-}
-
-.projects .project-card:hover .overlay {
-    opacity: 1;
-}
-.projects .project-showcase{
-	text-decoration: underline;
+  .project-section .slider-controls button:hover {
 	color: #08d665;
-	font-size: 25px;
-
-}
-
-
-@media (max-width: 768px) {
-    .projects .project-card {
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    .projects .project-card {
-        width: 100%;
-    }
-}
-
-
-  @media only screen and (max-width: 768px) {
-	.my-skills .skills {
-		  justify-content: center;
-	  }
-
-	  .my-skills .skill {
-		  width: 100%;
-	  }
   }
+
+  /* Fade-out effect */
+ .project-section  .project-container.fade-out {
+	opacity: 0;
+  }
+
+  .project-section .project-container.fade-out .project-image img,
+  .project-container.fade-out .project-details h2,
+  .project-container.fade-out .project-details p,
+  .project-container.fade-out .technologies,
+  .project-container.fade-out .project-links {
+	transform: translateY(20px);
+  }
+
+  /* New styles for project indicators */
+  .project-section .project-indicators {
+	  display: flex;
+	  justify-content: center;
+	  margin-top: 20px;
+  }
+
+  .project-section .indicator {
+	  width: 10px;
+	  height: 10px;
+	  border-radius: 50%;
+	  background-color: #ccc;
+	  margin: 0 5px;
+	  cursor: pointer;
+	  transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .project-section .indicator.active {
+	  background-color: #08d665;
+	  transform: scale(1.2);
+  }
+
+  /* Style for disabled navigation buttons */
+  .project-section .slider-controls button:disabled {
+	  opacity: 0.5;
+	  cursor: not-allowed;
+  }
+
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+	.project-section .project-container {
+	  flex-direction: column;
+	  text-align: center;
+	}
+
+	.project-section .project-details {
+	  padding-left: 0;
+	  margin-top: 20px;
+	}
+
+	.project-section .technologies span {
+	  margin-right: 5px;
+	}
+
+	.project-section .project-links {
+	  justify-content: center;
+	}
+  }
+
+  @media screen and (max-width: 480px) {
+	.project-section h1 {
+	  font-size: 28px;
+	}
+
+	.project-section .project-details h2 {
+	  font-size: 20px;
+	}
+
+	.project-section .project-details p {
+	  font-size: 14px;
+	}
+
+	.project-section .technologies span {
+	  padding: 6px 10px;
+	  font-size: 12px;
+	}
+
+	.project-section .demo-btn,
+	.project-section .github-btn {
+	  font-size: 14px;
+	  padding: 10px 18px;
+	}
+
+	.project-section .slider-controls button {
+	  font-size: 18px;
+	}
+  }
+
+  /* Style for disabled navigation buttons */
+  .project-section .slider-controls button:disabled {
+	  opacity: 0.5;
+	  cursor: not-allowed;
+  }
+
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+	.project-section .project-container {
+	  flex-direction: column;
+	  text-align: center;
+	}
+
+	.project-section .project-details {
+	  padding-left: 0;
+	  margin-top: 20px;
+	}
+
+	.project-section .technologies span {
+	  margin-right: 5px;
+	}
+  }
+
+  @media screen and (max-width: 480px) {
+	.project-section .project-details h2 {
+	  font-size: 20px;
+	}
+
+	.project-section .project-details p {
+	  font-size: 14px;
+	}
+
+	.project-section .technologies span {
+	  padding: 6px 10px;
+	  font-size: 12px;
+	}
+
+	.project-section .demo-btn {
+	  font-size: 14px;
+	  padding: 10px 18px;
+	}
+
+	.project-section .slider-controls button {
+	  font-size: 18px;
+	}
+  }
+  .Career-container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+.Career-container h1 {
+	text-align: center;
+	color: #333;
+}
+.Career-container .timeline {
+	position: relative;
+	padding: 20px 0;
+}
+.Career-container .timeline::before {
+	content: '';
+	position: absolute;
+	width: 2px;
+	background-color: #ddd;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	margin-left: -1px;
+}
+.Career-container .entry {
+	padding: 10px 40px;
+	position: relative;
+	background-color: inherit;
+	width: calc(50% - 40px);
+}
+.Career-container .entry:nth-child(even) {
+	left: 50%;
+}
+.Career-container .entry:nth-child(odd) {
+	left: 0;
+}
+.Career-container .entry-content {
+	padding: 20px;
+	background-color: white;
+	border-radius: 6px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.Career-container .entry::before {
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	border: 4px solid #08d665;
+	top: 15px;
+	border-radius: 50%;
+	z-index: 1;
+}
+.Career-container .entry:nth-child(even)::before {
+	left: -12px;
+}
+.Career-container .entry:nth-child(odd)::before {
+	right: -12px;
+}
+.Career-container .entry-title {
+	font-weight: bold;
+}
+.Career-container .entry-date {
+	color: #777;
+	font-style: italic;
+}
+@media screen and (max-width: 600px) {
+	.Career-container.timeline::before {
+		left: 31px;
+	}
+	.Career-container .entry {
+		width: 100%;
+		padding-left: 70px;
+		padding-right: 25px;
+	}
+	.Career-container .entry:nth-child(even) {
+		left: 0;
+	}
+	.Career-container .entry::before {
+		left: 20px;
+	}
+}
 /* ==========================================================================
 06. End Portfolio Area
 ========================================================================== */
