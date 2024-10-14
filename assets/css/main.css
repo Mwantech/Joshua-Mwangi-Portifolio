@@ -1079,86 +1079,91 @@ a.back-to-top:hover, a.back-to-top:focus{
 	  font-size: 18px;
 	}
   }
+
+  /*career container styles*/
   .Career-container {
-	max-width: 800px;
-	margin: 0 auto;
+    max-width: 800px;
+    margin: 0 auto;
 }
 .Career-container h1 {
-	text-align: center;
-	color: #333;
+    text-align: center;
+    color: #333;
 }
 .Career-container .timeline {
-	position: relative;
-	padding: 20px 0;
+    position: relative;
+    padding: 20px 0;
 }
 .Career-container .timeline::before {
-	content: '';
-	position: absolute;
-	width: 2px;
-	background-color: #ddd;
-	top: 0;
-	bottom: 0;
-	left: 50%;
-	margin-left: -1px;
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #ddd;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
 }
 .Career-container .entry {
-	padding: 10px 40px;
-	position: relative;
-	background-color: inherit;
-	width: calc(50% - 40px);
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    box-sizing: border-box;
 }
 .Career-container .entry:nth-child(even) {
-	left: 50%;
+    left: 50%;
 }
 .Career-container .entry:nth-child(odd) {
-	left: 0;
+    left: 0;
 }
 .Career-container .entry-content {
-	padding: 20px;
-	background-color: white;
-	border-radius: 6px;
-	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 .Career-container .entry::before {
-	content: '';
-	position: absolute;
-	width: 20px;
-	height: 20px;
-	background-color: white;
-	border: 4px solid #08d665;
-	top: 15px;
-	border-radius: 50%;
-	z-index: 1;
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 4px solid #08d665;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
 }
 .Career-container .entry:nth-child(even)::before {
-	left: -12px;
+    left: -10px;
 }
 .Career-container .entry:nth-child(odd)::before {
-	right: -12px;
+    right: -10px;
 }
 .Career-container .entry-title {
-	font-weight: bold;
+    font-weight: bold;
 }
 .Career-container .entry-date {
-	color: #777;
-	font-style: italic;
+    color: #777;
+    font-style: italic;
 }
 @media screen and (max-width: 600px) {
-	.Career-container.timeline::before {
-		left: 31px;
-	}
-	.Career-container .entry {
-		width: 100%;
-		padding-left: 70px;
-		padding-right: 25px;
-	}
-	.Career-container .entry:nth-child(even) {
-		left: 0;
-	}
-	.Career-container .entry::before {
-		left: 20px;
-	}
+    .Career-container .timeline::before {
+        left: 31px;
+    }
+    .Career-container .entry {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    .Career-container .entry:nth-child(even) {
+        left: 0;
+    }
+    .Career-container .entry::before {
+        left: 20px;
+    }
 }
+
+
 /* ==========================================================================
 06. End Portfolio Area
 ========================================================================== */
