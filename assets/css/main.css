@@ -634,6 +634,7 @@ a.back-to-top:hover, a.back-to-top:focus{
 .about-content .soft-skills-header {
 	color: #08d665;
 	margin-top: 1.5rem;
+	font-size: 30px;
 }
 .about-content p {
 	font-size: 1.2em;
